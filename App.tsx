@@ -1,14 +1,8 @@
 import React, { FC } from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import AppNavigator from './src/navigation/AppNavigator';
 
 const App: FC = () => {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text>App</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <AppNavigator />;
 };
 
 export default App;
