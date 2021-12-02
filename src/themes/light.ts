@@ -5,6 +5,9 @@ const theme: ITheme = {
   colors: {
     background: 'rgb(242, 242, 242)',
     mainText: '#2d2d2d',
+    tabBarBackground: '#000000',
+    tabBarLabelColor: '#ffffff',
+    tabBarActiveLabel: '#634DE2',
     primary: '#000000',
     card: '#000000',
     text: '#000000',

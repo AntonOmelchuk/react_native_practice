@@ -1,6 +1,9 @@
 interface IColors {
   background: string
   mainText: string
+  tabBarBackground: string
+  tabBarLabelColor: string
+  tabBarActiveLabel: string
   primary: string
   card: string
   text: string
