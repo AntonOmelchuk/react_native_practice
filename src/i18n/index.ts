@@ -21,7 +21,6 @@ const languageDetector = {
     const { I18nManager, SettingsManager } = NativeModules;
     const locale = IS_IOS ? SettingsManager.settings.AppleLanguages[0] : I18nManager.localeIdentifier;
     const localeShort = locale.split(/_|-/)[0];
-    console.log('localeShort: ', localeShort);
     const isPresent = appLocales.find((item) => item === localeShort);
     return AsyncStorage.getItem('language').then((lang) => {
       const language = isPresent ? localeShort : appLocales[0];

@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTheme } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { View, Text, StyleSheet } from 'react-native';
-import ITheme from '../../themes/interfaces/theme.interface';
+import { Text, StyleSheet } from 'react-native';
+import Layout from '../../layout/Layout';
+import ITheme from '../../themes/interfaces';
 
 const Main = () => {
   const { colors: { background, mainText } } = useTheme() as ITheme;
@@ -12,6 +13,7 @@ const Main = () => {
   const styles = StyleSheet.create({
     screen: {
       flex: 1,
+      padding: 16,
       backgroundColor: background,
     },
     title: {
@@ -20,9 +22,9 @@ const Main = () => {
   });
 
   return (
-    <View style={styles.screen}>
+    <Layout style={styles.screen}>
       <Text style={styles.title}>{t('hello')}</Text>
-    </View>
+    </Layout>
   );
 };
 

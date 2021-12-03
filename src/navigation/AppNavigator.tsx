@@ -22,7 +22,10 @@ const AppNavigator: FC = () => {
     <SafeAreaProvider>
       <SafeAreaView style={styles.safeArea} edges={['left', 'right']}>
         <NavigationContainer theme={sheme === 'dark' ? DarkTheme : LightTheme}>
-          <Stack.Navigator>
+          <Stack.Navigator screenOptions={{
+            headerShown: false,
+          }}
+          >
             <Stack.Screen name="Tabs" component={TabsNavigation} />
           </Stack.Navigator>
         </NavigationContainer>

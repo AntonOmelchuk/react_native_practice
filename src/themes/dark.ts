@@ -1,4 +1,4 @@
-import ITheme from './interfaces/theme.interface';
+import ITheme from './interfaces';
 
 const theme: ITheme = {
   dark: true,
@@ -13,6 +13,7 @@ const theme: ITheme = {
     text: '#000000',
     border: '#000000',
     notification: '#000000',
+    loaderColor: '#634DE2',
   },
 };
 

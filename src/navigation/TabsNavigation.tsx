@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useTheme } from '@react-navigation/native';
 import Main from '../screens/Main/Main';
 import Settings from '../screens/Settings/Settings';
-import ITheme from '../themes/interfaces/theme.interface';
+import ITheme from '../themes/interfaces';
 
 const Tab = createBottomTabNavigator();
 

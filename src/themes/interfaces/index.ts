@@ -9,6 +9,7 @@ interface IColors {
   text: string
   border: string
   notification: string
+  loaderColor: string
 }
 
 export default interface ITheme {

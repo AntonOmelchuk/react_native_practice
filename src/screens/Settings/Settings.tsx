@@ -1,21 +1,30 @@
-import { useTheme } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import ITheme from '../../themes/interfaces/theme.interface';
+import { Text, StyleSheet } from 'react-native';
+import { useTheme } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
+import Layout from '../../layout/Layout';
+import ITheme from '../../themes/interfaces';
 
 const Settings = () => {
   const { colors: { mainText } } = useTheme() as ITheme;
+  const { t } = useTranslation();
 
   const styles = StyleSheet.create({
+    screen: {
+      padding: 16,
+    },
     title: {
       color: mainText,
+      fontSize: 30,
+      fontWeight: '700',
+      textTransform: 'capitalize',
     },
   });
 
   return (
-    <View>
-      <Text style={styles.title}>Settings</Text>
-    </View>
+    <Layout style={styles.screen}>
+      <Text style={styles.title}>{t('settings')}</Text>
+    </Layout>
   );
 };
 
