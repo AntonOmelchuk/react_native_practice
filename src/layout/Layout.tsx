@@ -27,6 +27,7 @@ const Layout: FC<ILayout> = ({
       backgroundColor: background,
       ...(bottomSafeArea && { paddingBottom: insets?.bottom }),
       ...(topSafeArea && { paddingTop: insets?.top }),
+      padding: 16,
     },
   });
 

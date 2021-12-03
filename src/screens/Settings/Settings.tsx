@@ -10,9 +10,6 @@ const Settings = () => {
   const { t } = useTranslation();
 
   const styles = StyleSheet.create({
-    screen: {
-      padding: 16,
-    },
     title: {
       color: mainText,
       fontSize: 30,
@@ -22,7 +19,7 @@ const Settings = () => {
   });
 
   return (
-    <Layout style={styles.screen}>
+    <Layout>
       <Text style={styles.title}>{t('settings')}</Text>
     </Layout>
   );

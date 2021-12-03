@@ -14,6 +14,7 @@ const theme: ITheme = {
     border: '#000000',
     notification: '#000000',
     loaderColor: '#634DE2',
+    loaderBackground: '#ffffff',
   },
 };
 

@@ -10,6 +10,7 @@ interface IColors {
   border: string
   notification: string
   loaderColor: string
+  loaderBackground: string
 }
 
 export default interface ITheme {
