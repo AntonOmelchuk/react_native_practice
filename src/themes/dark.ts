@@ -5,7 +5,7 @@ const theme: ITheme = {
   colors: {
     background: '#000000',
     mainText: '#ffffff',
-    tabBarBackground: '#ffffff',
+    tabBarBackground: '#fefefe',
     tabBarLabelColor: '#2d2d2d',
     tabBarActiveLabel: '#634DE2',
     primary: '#000000',
