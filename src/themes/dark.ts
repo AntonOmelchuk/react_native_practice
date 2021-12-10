@@ -15,6 +15,8 @@ const theme: ITheme = {
     notification: '#000000',
     loaderColor: '#634DE2',
     loaderBackground: '#ffffff',
+    switchTrackColor: '#4cd137',
+    switchThumbColor: '#ffffff',
   },
 };
 

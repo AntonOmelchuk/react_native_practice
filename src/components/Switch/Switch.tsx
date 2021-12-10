@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { View, Switch, StyleSheet } from 'react-native';
+import { useTheme } from '@react-navigation/native';
+import ITheme from '../../themes/interfaces';
+import ISwitch from './interfaces';
 
-const CustomSwitch = ({ handler, enabled }) => {
+const CustomSwitch: FC<ISwitch> = ({ enabled, handler }) => {
+  const { colors: { switchTrackColor, switchThumbColor } } = useTheme() as ITheme;
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -12,8 +17,8 @@ const CustomSwitch = ({ handler, enabled }) => {
   return (
     <View style={styles.container}>
       <Switch
-        trackColor={{ true: '#4cd137' }}
-        thumbColor="#fff"
+        trackColor={{ true: switchTrackColor }}
+        thumbColor={switchThumbColor}
         onChange={handler}
         value={enabled}
       />

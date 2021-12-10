@@ -11,6 +11,8 @@ interface IColors {
   notification: string
   loaderColor: string
   loaderBackground: string
+  switchTrackColor: string
+  switchThumbColor: string
 }
 
 export default interface ITheme {

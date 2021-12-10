@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import { useTheme } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import AsyncStorage from '@react-native-community/async-storage';
 import Layout from '../../layout/Layout';
 import CustomSwitch from '../../components/Switch/Switch';
 import ITheme from '../../themes/interfaces';
+import { RootState } from '../../store/interfaces/redux.interface';
+import { Theme } from '../../store/general/interfaces';
+import { toggleTheme } from '../../store/general/actions';
 
 const Settings = () => {
-  const { dark, colors: { mainText } } = useTheme() as ITheme;
-  const [isDarkMode, setIsDarkMode] = useState(dark);
+  const { colors: { mainText } } = useTheme() as ITheme;
+  const { theme } = useSelector((state: RootState) => state.general, shallowEqual);
+  const dispatch = useDispatch();
 
   const { t } = useTranslation();
-  console.log('dark: ', dark);
+
+  const isDarkMode = theme === Theme.dark;
+
   const styles = StyleSheet.create({
     title: {
       color: mainText,
@@ -38,8 +44,7 @@ const Settings = () => {
   });
 
   const toggleDarkMode = () => {
-    AsyncStorage.setItem('theme', isDarkMode ? 'dark' : 'light')
-      .then(() => setIsDarkMode(!isDarkMode));
+    return dispatch(toggleTheme(theme === Theme.dark ? Theme.light : Theme.dark));
   };
 
   return (
