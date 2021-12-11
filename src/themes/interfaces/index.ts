@@ -13,6 +13,8 @@ interface IColors {
   loaderBackground: string
   switchTrackColor: string
   switchThumbColor: string
+  modalBackground: string
+  modalOverlay: string
 }
 
 export default interface ITheme {

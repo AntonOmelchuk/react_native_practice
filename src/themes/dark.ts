@@ -17,6 +17,8 @@ const theme: ITheme = {
     loaderBackground: '#ffffff',
     switchTrackColor: '#4cd137',
     switchThumbColor: '#ffffff',
+    modalOverlay: '#00000080',
+    modalBackground: '#262934',
   },
 };
 
