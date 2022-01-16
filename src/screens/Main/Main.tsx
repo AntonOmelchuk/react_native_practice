@@ -1,29 +1,27 @@
 import React from 'react';
 import { useTheme } from '@react-navigation/native';
-import { useTranslation } from 'react-i18next';
-import { Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Layout from '../../layout/Layout';
 import ITheme from '../../themes/interfaces';
+import MenuList from './components/MenuList';
 
 const Main = () => {
-  const { colors: { background, mainText } } = useTheme() as ITheme;
-
-  const { t } = useTranslation();
+  const { colors: { background } } = useTheme() as ITheme;
 
   const styles = StyleSheet.create({
     screen: {
       flex: 1,
-      padding: 16,
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 0,
+      margin: 0,
       backgroundColor: background,
-    },
-    title: {
-      color: mainText,
     },
   });
 
   return (
     <Layout style={styles.screen}>
-      <Text style={styles.title}>{t('hello')}</Text>
+      <MenuList />
     </Layout>
   );
 };

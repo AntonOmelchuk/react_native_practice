@@ -1,6 +1,8 @@
 interface IColors {
+  blackWhite: string
   background: string
   mainText: string
+  screenLabel: string
   tabBarBackground: string
   tabBarLabelColor: string
   tabBarActiveLabel: string

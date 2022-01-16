@@ -3,10 +3,12 @@ import ITheme from './interfaces';
 const theme: ITheme = {
   dark: true,
   colors: {
+    blackWhite: '#ffffff',
     background: '#000000',
-    mainText: '#ffffff',
-    tabBarBackground: '#fefefe',
-    tabBarLabelColor: '#2d2d2d',
+    mainText: '#cccccc',
+    screenLabel: '#000000',
+    tabBarBackground: '#222',
+    tabBarLabelColor: '#cccccc',
     tabBarActiveLabel: '#634DE2',
     primary: '#000000',
     card: '#000000',
