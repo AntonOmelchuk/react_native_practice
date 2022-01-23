@@ -21,6 +21,7 @@ const Animations = () => {
   return (
     <View>
       <Text style={styles.text} onPress={() => navigate('CornerMovement')}>{t('cornerAnimations')}</Text>
+      <Text style={styles.text} onPress={() => navigate('StaggeredDrag')}>{t('staggeredDrag')}</Text>
     </View>
   );
 };

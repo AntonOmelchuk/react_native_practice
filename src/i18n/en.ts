@@ -9,4 +9,5 @@ export default {
   ru: 'русский',
   animations: 'animations',
   cornerAnimations: 'Movement in the corners',
+  staggeredDrag: 'Staggered Drag',
 };

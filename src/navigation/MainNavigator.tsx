@@ -6,6 +6,7 @@ import Main from '../screens/Main/Main';
 import Animations from '../screens/Animations/Animations';
 import CornerMovement from '../screens/Animations/components/CornerMovement';
 import ITheme from '../themes/interfaces';
+import StaggeredDrag from '../screens/Animations/components/StaggeredDrag';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,13 +20,26 @@ const MainNavigator: FC = () => {
       headerBackTitleVisible: false,
     }}
     >
-      <Stack.Screen name="Main" component={Main} />
+      <Stack.Screen
+        name="Main"
+        component={Main}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen name="Animations" component={Animations} />
       <Stack.Screen
         name="CornerMovement"
         component={CornerMovement}
         options={{
           headerTitle: t('cornerAnimations'),
+        }}
+      />
+      <Stack.Screen
+        name="StaggeredDrag"
+        component={StaggeredDrag}
+        options={{
+          headerTitle: t('staggeredDrag'),
         }}
       />
     </Stack.Navigator>
