@@ -10,4 +10,7 @@ export default {
   animations: 'animations',
   cornerAnimations: 'Movement in the corners',
   staggeredDrag: 'Staggered Drag',
+  swipeCards: 'Swipe Cards',
+  yes: 'yes',
+  no: 'no',
 };

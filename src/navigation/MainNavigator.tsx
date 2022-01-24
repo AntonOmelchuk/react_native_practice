@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next';
 import Main from '../screens/Main/Main';
 import Animations from '../screens/Animations/Animations';
 import CornerMovement from '../screens/Animations/components/CornerMovement';
-import ITheme from '../themes/interfaces';
 import StaggeredDrag from '../screens/Animations/components/StaggeredDrag';
+import SwipeCards from '../screens/Animations/components/SwipeCards';
+import ITheme from '../themes/interfaces';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +41,13 @@ const MainNavigator: FC = () => {
         component={StaggeredDrag}
         options={{
           headerTitle: t('staggeredDrag'),
+        }}
+      />
+      <Stack.Screen
+        name="SwipeCards"
+        component={SwipeCards}
+        options={{
+          headerTitle: t('swipeCards'),
         }}
       />
     </Stack.Navigator>

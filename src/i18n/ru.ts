@@ -10,4 +10,7 @@ export default {
   animations: 'анимации',
   cornerAnimations: 'Движение по углам',
   staggeredDrag: 'Ступенчатое перетаскивание',
+  swipeCards: 'Свайп карт',
+  yes: 'да',
+  no: 'нет',
 };

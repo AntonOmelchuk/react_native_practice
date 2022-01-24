@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import { useTheme } from '@react-navigation/native';
 import {
-  StyleSheet, Animated, TouchableWithoutFeedback, useWindowDimensions,
+  StyleSheet, Animated, TouchableWithoutFeedback,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import Layout from '../../../layout/Layout';
 import ITheme from '../../../themes/interfaces';
+import { HEIGHT, WIDTH } from '../../../constants/general';
 
 const CornerMovement = () => {
   const animationValue = useRef(new Animated.ValueXY()).current;
@@ -15,7 +16,6 @@ const CornerMovement = () => {
 
   const { colors: { background, blackWhite } } = useTheme() as ITheme;
 
-  const { height, width } = useWindowDimensions();
   const { bottom, top } = useSafeAreaInsets();
   const tabBarHeight = useBottomTabBarHeight();
 
@@ -41,11 +41,11 @@ const CornerMovement = () => {
   const startAnimation = () => {
     Animated.sequence([
       Animated.spring(animationValue.y, {
-        toValue: height - (VIEW_HEIGHT + bottom + tabBarHeight + top + VIEW_HEIGHT / 2),
+        toValue: HEIGHT - (VIEW_HEIGHT + bottom + tabBarHeight + top + VIEW_HEIGHT / 2),
         useNativeDriver: false,
       }),
       Animated.spring(animationValue.x, {
-        toValue: width - VIEW_WIDTH,
+        toValue: WIDTH - VIEW_WIDTH,
         useNativeDriver: false,
       }),
       Animated.spring(animationValue.y, {
