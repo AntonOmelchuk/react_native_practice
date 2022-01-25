@@ -21,6 +21,8 @@ const theme: ITheme = {
     switchThumbColor: '#ffffff',
     modalOverlay: '#00000080',
     modalBackground: '#262934',
+    danger: '#dc3545',
+    success: '#198754',
   },
 };
 

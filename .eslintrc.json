@@ -23,6 +23,7 @@
     "react/jsx-filename-extension": 0,
     "arrow-body-style": 0,
     "react/prefer-stateless-function": 0,
+    "react/jsx-props-no-spreading": 0,
     "no-trailing-spaces": 0,
     "comma-dangle": 0,
     "radix": 0,

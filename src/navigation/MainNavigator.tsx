@@ -4,9 +4,9 @@ import { useTheme } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import Main from '../screens/Main/Main';
 import Animations from '../screens/Animations/Animations';
-import CornerMovement from '../screens/Animations/components/CornerMovement';
-import StaggeredDrag from '../screens/Animations/components/StaggeredDrag';
-import SwipeCards from '../screens/Animations/components/SwipeCards';
+import CornerMovement from '../screens/Animations/animations/CornerMovement';
+import StaggeredDrag from '../screens/Animations/animations/StaggeredDrag';
+import SwipeCards from '../screens/Animations/animations/SwipeCards';
 import ITheme from '../themes/interfaces';
 
 const Stack = createNativeStackNavigator();

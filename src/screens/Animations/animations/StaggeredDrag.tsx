@@ -1,5 +1,4 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   View, StyleSheet, Animated, PanResponder,
 } from 'react-native';
@@ -16,7 +15,7 @@ const StaggeredDrag = () => {
     { id: 3, animation: new Animated.ValueXY() },
   ];
 
-  const panResponder = React.useRef(
+  const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onMoveShouldSetPanResponder: () => true,

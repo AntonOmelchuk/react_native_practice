@@ -17,6 +17,8 @@ interface IColors {
   switchThumbColor: string
   modalBackground: string
   modalOverlay: string
+  danger: string
+  success: string
 }
 
 export default interface ITheme {
