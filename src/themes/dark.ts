@@ -23,6 +23,9 @@ const theme: ITheme = {
     modalBackground: '#262934',
     danger: '#dc3545',
     success: '#198754',
+    white: '#ffffff',
+    black: '#000000',
+    tomato: '#ff6347',
   },
 };
 

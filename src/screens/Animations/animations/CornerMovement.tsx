@@ -41,7 +41,7 @@ const CornerMovement = () => {
   const startAnimation = () => {
     Animated.sequence([
       Animated.spring(animationValue.y, {
-        toValue: HEIGHT - (VIEW_HEIGHT + bottom + tabBarHeight + top + VIEW_HEIGHT / 2),
+        toValue: HEIGHT - (VIEW_HEIGHT + bottom + tabBarHeight + VIEW_HEIGHT / 2),
         useNativeDriver: false,
       }),
       Animated.spring(animationValue.x, {

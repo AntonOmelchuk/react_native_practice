@@ -7,6 +7,7 @@ import Animations from '../screens/Animations/Animations';
 import CornerMovement from '../screens/Animations/animations/CornerMovement';
 import StaggeredDrag from '../screens/Animations/animations/StaggeredDrag';
 import SwipeCards from '../screens/Animations/animations/SwipeCards';
+import AnimatedForm from '../screens/Animations/animations/AnimatedForm';
 import ITheme from '../themes/interfaces';
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +49,13 @@ const MainNavigator: FC = () => {
         component={SwipeCards}
         options={{
           headerTitle: t('swipeCards'),
+        }}
+      />
+      <Stack.Screen
+        name="AnimatedForm"
+        component={AnimatedForm}
+        options={{
+          headerTitle: t('animatedForm'),
         }}
       />
     </Stack.Navigator>

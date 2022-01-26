@@ -23,6 +23,7 @@ const Animations = () => {
       <Text style={styles.text} onPress={() => navigate('CornerMovement')}>{t('cornerAnimations')}</Text>
       <Text style={styles.text} onPress={() => navigate('StaggeredDrag')}>{t('staggeredDrag')}</Text>
       <Text style={styles.text} onPress={() => navigate('SwipeCards')}>{t('swipeCards')}</Text>
+      <Text style={styles.text} onPress={() => navigate('AnimatedForm')}>{t('animatedForm')}</Text>
     </View>
   );
 };

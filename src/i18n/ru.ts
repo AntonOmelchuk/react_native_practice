@@ -13,4 +13,6 @@ export default {
   swipeCards: 'Свайп карт',
   yes: 'да',
   no: 'нет',
+  animatedForm: 'Анимированая Форма',
+  login: 'логин',
 };

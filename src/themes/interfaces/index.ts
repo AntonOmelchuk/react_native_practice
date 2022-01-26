@@ -19,6 +19,9 @@ interface IColors {
   modalOverlay: string
   danger: string
   success: string
+  white: string
+  black: string
+  tomato: string
 }
 
 export default interface ITheme {

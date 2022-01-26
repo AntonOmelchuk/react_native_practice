@@ -13,4 +13,6 @@ export default {
   swipeCards: 'Swipe Cards',
   yes: 'yes',
   no: 'no',
+  animatedForm: 'Animated Form',
+  login: 'login',
 };
