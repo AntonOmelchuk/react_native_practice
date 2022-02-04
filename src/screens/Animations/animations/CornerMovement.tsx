@@ -16,7 +16,7 @@ const CornerMovement = () => {
 
   const { colors: { background, blackWhite } } = useTheme() as ITheme;
 
-  const { bottom, top } = useSafeAreaInsets();
+  const { bottom } = useSafeAreaInsets();
   const tabBarHeight = useBottomTabBarHeight();
 
   const styles = StyleSheet.create({

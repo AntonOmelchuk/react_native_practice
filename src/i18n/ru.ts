@@ -15,4 +15,5 @@ export default {
   no: 'нет',
   animatedForm: 'Анимированая Форма',
   login: 'логин',
+  progressBar: 'Индикатор загрузки',
 };

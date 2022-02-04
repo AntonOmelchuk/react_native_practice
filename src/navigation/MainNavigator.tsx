@@ -8,6 +8,7 @@ import CornerMovement from '../screens/Animations/animations/CornerMovement';
 import StaggeredDrag from '../screens/Animations/animations/StaggeredDrag';
 import SwipeCards from '../screens/Animations/animations/SwipeCards';
 import AnimatedForm from '../screens/Animations/animations/AnimatedForm';
+import ProgressBar from '../screens/Animations/animations/ProgressBar';
 import ITheme from '../themes/interfaces';
 
 const Stack = createNativeStackNavigator();
@@ -56,6 +57,13 @@ const MainNavigator: FC = () => {
         component={AnimatedForm}
         options={{
           headerTitle: t('animatedForm'),
+        }}
+      />
+      <Stack.Screen
+        name="ProgressBar"
+        component={ProgressBar}
+        options={{
+          headerTitle: t('progressBar'),
         }}
       />
     </Stack.Navigator>

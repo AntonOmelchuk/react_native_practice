@@ -15,4 +15,5 @@ export default {
   no: 'no',
   animatedForm: 'Animated Form',
   login: 'login',
+  progressBar: 'Progress Bar',
 };
